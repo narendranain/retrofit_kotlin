@@ -45,6 +45,8 @@ class CreatePOI : AppCompatActivity(){
                     }
 
                     override fun onResponse(call: Call<PoiModel>, response: Response<PoiModel>) {
+                        try{
+
                         if (response.body()!=null) {
                             Toast.makeText(
                                 applicationContext,
@@ -52,6 +54,9 @@ class CreatePOI : AppCompatActivity(){
                                 Toast.LENGTH_LONG
                             )
                                 .show()
+                        }
+                        }catch(e: Exception){
+
                         }
                     }
 

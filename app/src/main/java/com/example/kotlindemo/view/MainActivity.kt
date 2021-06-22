@@ -1,11 +1,10 @@
-package com.example.kotlindemo
+package com.example.kotlindemo.view
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
-import com.example.kotlindemo.view.CreatePOI
-import com.example.kotlindemo.view.UpdateUser
+import com.example.kotlindemo.R
 import com.example.kotlindemo.model.SignUp
 import com.example.kotlindemo.network.RetrofitClient
 import kotlinx.android.synthetic.main.activity_main.*

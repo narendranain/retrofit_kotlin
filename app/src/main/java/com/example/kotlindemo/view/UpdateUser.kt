@@ -35,14 +35,18 @@ class UpdateUser :AppCompatActivity() {
                     }
 
                     override fun onResponse(call: Call<UpdateUserModel>, response: Response<UpdateUserModel>) {
-                        if (response.body()!=null) {
-                            Toast.makeText(
-                                applicationContext,
-                                response.body()?.msg,
-                                Toast.LENGTH_LONG
-                            )
-                                .show()
-                        }
+
+                      try {
+                          if (response.body() != null) {
+                              Toast.makeText(
+                                  applicationContext,
+                                  response.body()?.msg,
+                                  Toast.LENGTH_LONG
+                              )
+                                  .show()
+                          }
+                      }catch(e: Exception){
+                      }
                     }
 
                 })
